@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+
+<!-- 파일 가져갈시 html, css, 이미지 경로 재설정할 것-->
+<!-- -->
+
+<html>
+
+<head>
+
+  <!-- css 초기화 -->
+  <link rel="stylesheet" href="C:\Users\a9018\Desktop\ShoppingMall\css\base.css">
+  <!-- 상단 마이메뉴 & 메뉴바 css -->
+  <link rel="stylesheet" href="C:\Users\a9018\Desktop\ShoppingMall\css\main_menu.css">
+  <!-- 슬라이드 배너 css -->
+  <link rel="stylesheet" href="C:\Users\a9018\Desktop\ShoppingMall\css\slide_banner.css">
+  <!-- 포토 리뷰 css -->
+  <link rel="stylesheet" href="C:\Users\a9018\Desktop\ShoppingMall\css\photo_review.css">
+  <!-- 메인화면 상품 리스트 css -->
+  <link rel="stylesheet" href="C:\Users\a9018\Desktop\ShoppingMall\css\product_list.css">
+
+
+  <meta charset="utf-8">
+
+  <title>내셔널지오그래픽 어패럴</title>
+
+</head>
+
+<body>
+
+  <!-- 상단 전체 메뉴바 -->
+  <div id="header">
+
+    <div class="top_header">
+
+      <!-- 상단 로고 그림 -->
+      <div class="logo">
+        <a href="#">
+          <img src="C:\Users\a9018\Desktop\ShoppingMall\아이콘 자료\로고\index.png" alt="상단 로고" title="상단 로고">
+        </a>
+      </div>
+
+      <!-- 검색 기능 -->
+      <div class="search_box">
+
+        <form>
+          <div class="#">
+            <div class="#">
+              <!-- 검색창 -->
+              <input type="text" id="search_form" name="keyword" class="top_search_text" title placeholder
+                autocomplete="off">
+              <!-- 검색창 돋보기 버튼-->
+              <input type="image" src="C:\Users\a9018\Desktop\ShoppingMall\아이콘 자료\아이콘\searching.png" id="search_btn"
+                class="top_search_btn" title="검색" value="검색" alt="검색">
+            </div>
+          </div>
+        </form>
+
+      </div>
+
+      <!-- 상단 고객 메뉴 -->
+      <div class="my_box">
+
+        <ul class="my_menu">
+
+          <li><a href="#">LOGIN</a></li>
+          <li><a href="#">JOIN</a></li>
+          <li>
+            <div class="mypage">
+              <span class="mypage_menu"><a href="">MYPAGE</a></span>
+              <ul style="display: none;">
+                <li><a href="#">주문조회</a></li>
+                <li><a href="#">내정보수정</a></li>
+                <li><a href="#">찜 리스트</a></li>
+                <li><a href="#">정품등록</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">CART( <strong>0</strong> )</a></li>
+          <li><a href="#">CS CENTER</a></li>
+          <li><a href="#" target="_blank">매장개설문의</a></li>
+          <li><a href="#" target="_blank">매장찾기</a></li>
+          <li><a href="#">고객의소리</a></li>
+          <li><a href="#">B2B</a></li>
+
+        </ul>
+
+      </div>
+
+    </div> <!-- 여기까지 로고, 검색창, 마이메뉴 -->
+
+    <!-- 상품메뉴 코드 -->
+    <div id="sub_header">
+
+      <!-- 절대 위치의 메뉴버튼 구현 X -->
+
+      <!-- 서브메뉴 검은색 박스 -->
+      <div class="submenu_box">
+
+        <!-- 서브 메뉴 리스트-->
+        <!-- .submenu의 li가 리스트 목록 sub1, sub2, sub3이 숨겨진 목록-->
+        <ul class="submenu">
+          <!-- 이벤트 -->
+          <li><a href="#" class="#">EVENTS</a></li>
+          <!-- 신상품 -->
+          <li><a href="#" class="#">NEW ARRIVALS</a>
+            <ul class="sub1">
+              <li><a href="#" class="#">22SS</a>
+                <ul class="sub2">
+                  <li><a href="#" class="#">APPAREL</a></li>
+                  <li><a href="#" class="#">BAG</a></li>
+                  <li><a href="#" class="#">ACC</a></li>
+                  <li><a href="#" class="#">SHOES</a></li>
+                  <li><a href="#" class="#">KIDS</a>
+                    <ul class="sub3">
+                      <li><a href="#" class="#">APPAREL</a></li>
+                      <li><a href="#" class="#">BAG</a></li>
+                      <li><a href="#" class="#">SHOES</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="#" class="#">21FW</a>
+                <ul class="sub2">
+                  <li><a href="#" class="#">APPAREL</a></li>
+                  <li><a href="#" class="#">BAG</a></li>
+                  <li><a href="#" class="#">SHOES</a></li>
+                  <li><a href="#" class="#">ACC</a></li>
+                  <li><a href="#" class="#">KIDS</a>
+                    <ul class="sub3">
+                      <li><a href="#" class="#">APPAREL</a></li>
+                      <li><a href="#" class="#">BAG&amp;ACC</a></li>
+                      <li><a href="#" class="#">SHOES</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="#" class="#">CAMPING</a></li>
+            </ul>
+          </li>
+          <!-- 남성 -->
+          <li><a href="#" class="#">MEN</a>
+            <ul class="sub1">
+              <li><a href="#" class="#">OUTER</a>
+                <ul class="sub2">
+                  <li><a href="#" class="#">다운</a></li>
+                  <li><a href="#" class="#">베스트</a></li>
+                  <li><a href="#" class="#">자켓</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="#">TOP</a>
+                <ul class="sub2">
+                  <li><a href="#" class="#">맨투맨</a></li>
+                  <li><a href="#" class="#">후디</a></li>
+                  <li><a href="#" class="#">티셔츠</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="#">BOTTOM</a>
+                <ul class="sub2">
+                  <li><a href="#" class="#">팬츠</a></li>
+                  <li><a href="#" class="#">트레이닝 팬츠</a></li>
+                  <li><a href="#" class="#">반바지</a></li>
+                  <li><a href="#" class="#">레깅스</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="#">SURF WEAR</a></li>
+            </ul>
+          </li>
+          <!-- 여성 -->
+          <li><a href="#" class="#">WOMEN</a>
+            <ul class="sub1">
+              <li><a href="#" class="#">OUTER</a>
+                <ul class="sub2">
+                  <li><a href="#" class="#">다운</a></li>
+                  <li><a href="#" class="#">베스트</a></li>
+                  <li><a href="#" class="#">자켓</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="#">TOP</a>
+                <ul class="sub2">
+                  <li><a href="#" class="#">맨투맨</a></li>
+                  <li><a href="#" class="#">후디</a></li>
+                  <li><a href="#" class="#">티셔츠</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="#">BOTTOM</a>
+                <ul class="sub2">
+                  <li><a href="#" class="#">팬츠</a></li>
+                  <li><a href="#" class="#">트레이닝 팬츠</a></li>
+                  <li><a href="#" class="#">반바지</a></li>
+                  <li><a href="#" class="#">레깅스</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="#">SURF WEAR</a></li>
+            </ul>
+          </li>
+          <!-- 유아 -->
+          <li><a href="#" class="#">KIDS</a>
+            <ul class="sub1">
+              <li><a href="#" class="#">OUTER</a>
+                <ul class="sub2">
+                  <li><a href="#" class="#">다운</a></li>
+                  <li><a href="#" class="#">베스트</a></li>
+                  <li><a href="#" class="#">자켓</a></li>
+                  <li><a href="#" class="#">플리스</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="#">TOP</a>
+                <ul class="sub2">
+                  <li><a href="#" class="#">맨투맨</a></li>
+                  <li><a href="#" class="#">후디</a></li>
+                  <li><a href="#" class="#">티셔츠</a></li>
+                  <li><a href="#" class="#">SET-UP</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="#">BOTTOM</a>
+                <ul class="sub2">
+                  <li><a href="#" class="#">팬츠</a></li>
+                  <li><a href="#" class="#">반바지</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="#">BAG</a></li>
+              <li><a href="#" class="#">SHOES</a></li>
+              <li><a href="#" class="#">ACC</a>
+                <ul class="sub2">
+                  <li><a href="#" class="#">전체보기</a></li>
+                  <li><a href="#" class="#">모자</a></li>
+                  <li><a href="#" class="#">기타 액세서리</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- 가방 -->
+          <li><a href="#" class="#">BAG</a>
+            <ul class="sub1">
+              <li><a href="#" class="#">전체보기</a></li>
+              <li><a href="#" class="#">백팩</a></li>
+              <li><a href="#" class="#">힙색</a></li>
+              <li><a href="#" class="#">크로스백</a></li>
+              <li><a href="#" class="#">토트백</a></li>
+              <li><a href="#" class="#">워터백</a></li>
+            </ul>
+          </li>
+          <!-- 신발 -->
+          <li><a href="#" class="#">SHOES</a>
+            <ul class="sub1">
+              <li><a href="#" class="#">전체보기</a></li>
+              <li><a href="#" class="#">스니커즈</a></li>
+              <li><a href="#" class="#">슬리퍼 &amp; 샌들</a></li>
+              <li><a href="#" class="#">SEASON ITEM</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="#">ACC</a>
+            <ul class="sub1">
+              <li><a href="#" class="#">전체보기</a></li>
+              <li><a href="#" class="#">모자</a>
+                <ul class="sub2">
+                  <li><a href="#" class="#">전체보기</a></li>
+                  <li><a href="#" class="#">CAP</a></li>
+                  <li><a href="#" class="#">HAT</a></li>
+                  <li><a href="#" class="#">BEANIE</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="#">기타 액세서리</a></li>
+            </ul>
+          </li>
+          <!-- 캐리어 -->
+          <li><a href="#" class="#">SUITCASES</a>
+            <ul class="sub1">
+              <li><a href="#" class="#">캐리어</a></li>
+              <li><a href="#" class="#">캐리어 세트</a></li>
+              <li><a href="#" class="#">기내용</a></li>
+              <li><a href="#" class="#">화물용</a></li>
+            </ul>
+          </li>
+          <!-- 캠핑 -->
+          <li><a href="#" class="#">CAMPING</a>
+            <ul class="sub1">
+              <li><a href="#" class="#">텐트</a></li>
+              <li><a href="#" class="#">테이블 &amp; 체어</a></li>
+              <li><a href="" class="">매트</a></li>
+              <li><a href="" class="">타프</a></li>
+              <li><a href="" class="">캠핑 아이템</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--================== 광고 슬라이드바 ==================-->
+  <div class="slidebanner_container" id="slide_box">
+
+    <div class="slide">
+      <a href="#">
+        <img
+          src="https://www.naturestore.co.kr/data/skin/front/the_living/img/banner/slider_4146068877/c210ea2fe5c0590252ddc913a50292ba_94448.jpg">
+      </a>
+    </div>
+
+    <div class="slide">
+      <a href="#">
+        <img
+          src="https://www.naturestore.co.kr/data/skin/front/the_living/img/banner/slider_4146068877/c210ea2fe5c0590252ddc913a50292ba_56835.jpg">
+      </a>
+    </div>
+
+    <div class="slide">
+      <a href="#">
+        <img
+          src="https://www.naturestore.co.kr/data/skin/front/the_living/img/banner/slider_4146068877/c210ea2fe5c0590252ddc913a50292ba_58324.jpg">
+      </a>
+    </div>
+
+    <!-- 이전/다음 버튼 -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+
+  <!-- 현재 표시되는 슬라이드 배너 표시해주는 점모양 버튼 -->
+  <div class='dotlist'>
+    <span class="dot" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+
+  <!--================== 슬라이드 배너 스크립트 코드 =====================-->
+  <script>
+    // 슬라이드 인덱스 선언
+    var slideIndex = 0;
+    // 슬라이드 보여주기
+    showSlides(slideIndex);
+    // 좌우 버튼 누르면 이전/다음 슬라이드 넘기게 해주는 기능
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    // 밑에 점 버튼 누르면 지정한 슬라이드로 넘기게 해주는 기능
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    // 슬라이드 보여주는 함수
+    function showSlides(n) {
+      // 반복 변수 i 선언
+      var i;
+      // 슬라이드 사진
+      var slides = document.getElementsByClassName("slide");
+      // 슬라이드 지정하는 하단 점 모양 버튼
+      var dots = document.getElementsByClassName("dot");
+      // 인덱스가 슬라이드 전체 길이보다 커지면 처음 슬라이드(0번 인덱스 슬라이드)로 보냄
+      if (n > slides.length - 1) {
+        slideIndex = 0;
+      }
+      // 인덱스가 슬라이드 0보다 작아지면 마지막 슬라이드(최댓값 인덱스 슬라이드)로 보냄
+      if (n < 0) {
+        slideIndex = slides.length - 1;
+      }
+      // 모든 슬라이드가 안 보이도록 변경
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      // 모든 점 버튼들이 비활성화
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      // 현재 지정된 인덱스에 해당하는 슬라이드가 보이게 함
+      slides[slideIndex].style.display = "block";
+      // 현재 지정된 인덱스에 해당하는 점 버튼이 활성화 상태로 되게 함
+      dots[slideIndex].className += " active";
+    }
+  </script>
+
+  <!--========================= 포토 리뷰 부분 ==========================-->
+
+  <div id="photo_review">
+
+    <div class="review_head">
+      <p class="main_head">PHOTO REVIEW</p>
+      <p class="sub_head">포토리뷰 작성 이벤트</p>
+    </div>
+
+    <div class="review_box">
+
+      <div class="view1 review">
+        <a href="#">
+          <img class='review_img' src="https://naturestore.co.kr/data/plus_review/1000006253/t/square_41f05a22f83877ce">
+        </a>
+        <script>
+          document.write("<br><br><b>내셔널지오그래픽 N214USW960 폴리카터 빅 로고 맨투맨 티셔츠 CARBON BLACK<br><br></b>");
+
+          var rating = 5;
+
+          for (i = 1; i <= 5; i++) {
+            document.write("<p id = 'star'>★</p>")
+          }
+          document.write("<b> " + rating + "</b><br>")
+
+          document.write("아주아주 좋다고하네요 선물했습니다 ㅋ<br>");
+        </script>
+      </div>
+
+      <div class="view2 review">
+        <a href="#">
+          <img class="review_img" src="https://naturestore.co.kr/data/plus_review/1000003897/t/square_19126ad27a7c1bb9">
+        </a>
+        <script>
+          document.write("<br><br><b>내셔널지오그래픽 가방 N211ABG040 듀블 에어 백팩 BLACK<br><br></b>");
+
+          var rating = 5;
+
+          for (i = 1; i <= 5; i++) {
+            document.write("<p id = 'star'>★</p>")
+          }
+          document.write("<b> " + rating + "</b><br>")
+
+          document.write("중학교 여자아이 입학가방으로 샀어요 아이가 골랐는데 깔끔한 디자인에 실물이 더 예쁘네요<br>");
+        </script>
+      </div>
+
+      <div class="view3 review">
+        <a href="#">
+          <img class='review_img' src="https://naturestore.co.kr/data/plus_review/1000006129/t/square_338114d555a3cf9f">
+        </a>
+        <script>
+          document.write("<br><br><b>내셔널지오그래픽 N215MCL010 카밍 바디로션 400ml<br><br></b>");
+
+          var rating = 5;
+
+          for (i = 1; i <= 5; i++) {
+            document.write("<p id = 'star'>★</p>")
+          }
+          document.write("<b> " + rating + "</b><br>")
+
+          document.write("흡수 빠르고 자극적이지 않아서 좋습니다~<br>");
+        </script>
+      </div>
+
+      <div class="view4 review">
+        <a href="#">
+          <img class="review_img" src="https://naturestore.co.kr/data/plus_review/1000006619/t/square_acefdf9c4c9418d1">
+        </a>
+        <script>
+          document.write("<br><br><b>내셔널지오그래픽 N225MCS040 씨크닝 샴푸 400ml, 미니파우치 기획세트<br><br></b>");
+
+          var rating = 5;
+
+          for (i = 1; i <= 5; i++) {
+            document.write("<p id = 'star'>★</p>")
+          }
+          document.write("<b> " + rating + "</b><br>")
+
+          document.write("사용감이 좋네요. 부드럽고 향도 은은해서 맘에 들어요~~<br>");
+        </script>
+      </div>
+
+      <div class="view5 review">
+        <a href="#">
+          <img class="review_img" src="https://naturestore.co.kr/data/plus_review/1000001665/t/square_431b7bdafda8885a">
+        </a>
+        <script>
+          document.write("<br><br><b>내셔널지오그래픽 가방 N195KBG030 키즈 투포켓 백팩 L/PINK<br><br></b>");
+
+          var rating = 5;
+
+          for (i = 1; i <= 5; i++) {
+            document.write("<p id = 'star'>★</p>")
+          }
+          document.write("<b> " + rating + "</b><br>")
+
+          document.write("사진보다훨씬예쁜색깔이네요 가방은 흐물거리는 재질은아니고, 딴딴합니다 수납공간도 여기저기있어서좋구요초등저학년때딱맞는사이즈같네요<br>");
+        </script>
+      </div>
+
+      <div class="view6 review">
+        <a href="#">
+          <img class="review_img" src="https://naturestore.co.kr/data/plus_review/1000006144/t/square_386198fd1e64e686">
+        </a>
+        <script>
+          document.write("<br><br><b>내셔널지오그래픽 N221KBG010 키즈 뉴비 백팩 KHAKI<br><br></b>");
+
+          var rating = 5;
+
+          for (i = 1; i <= 5; i++) {
+            document.write("<p id = 'star'>★</p>")
+          }
+          document.write("<b> " + rating + "</b><br>")
+
+          document.write("초등학교 입학하는 둘째가 골랐어요~^^ 색깔도 예쁘고 크기도 좋아요~ 아이가 맘에들어하니 좋아요~<br>");
+        </script>
+      </div>
+
+    </div>
+
+  </div>
+  <!--================== 포토 리뷰 더보기 버튼 ==================-->
+  <a href="#">
+    <div id="btn_more_review">
+      <p onclick="javascript:location.href='#';">더보기</p>
+    </div>
+  </a>
+
+  <!--================== 상품 리스트 목록 ==================-->
+
+  <div id="product_list">
+
+    <figure class="product">
+
+      <div class="product_img">
+        <a href="#"><img src="C:\Users\a9018\Desktop\ShoppingMall\아이콘 자료\상품\N_여성(women)_카키_롱슬리브(top).jpg"></a>
+      </div>
+
+      <figcaption class="product_ment">
+        <h1>N_여성(women)_카키_롱슬리브(top)</h1>
+        <p>N_여성(women)_카키_롱슬리브(top)</p>
+      </figcaption>
+    </figure>
+
+    <figure class="product">
+
+      <div class="product_img">
+        <a href="#"><img src="C:\Users\a9018\Desktop\ShoppingMall\아이콘 자료\상품\남성_갈색_코트.jpg"></a>
+      </div>
+
+      <figcaption class="product_ment">
+        <h1>남성_갈색_코트</h1>
+        <p>남성_갈색_코트</p>
+      </figcaption>
+    </figure>
+
+    <figure class="product">
+
+      <div class="product_img">
+        <a href="#"><img src="C:\Users\a9018\Desktop\ShoppingMall\아이콘 자료\상품\여성_흰색_카고바지.jpg"></a>
+      </div>
+
+      <figcaption class="product_ment">
+        <h1>여성_흰색_카고바지</h1>
+        <p>여성_흰색_카고바지</p>
+      </figcaption>
+
+    </figure>
+
+    <figure class="product">
+
+      <div class="product_img">
+        <a href="#"><img src="C:\Users\a9018\Desktop\ShoppingMall\아이콘 자료\상품\여성_청색_아우터.jpg"></a>
+      </div>
+
+      <figcaption class="product_ment">
+        <h1>여성_청색_아우터</h1>
+        <p>여성_청색_아우터</p>
+      </figcaption>
+
+    </figure>
+
+    <figure class="product">
+
+      <div class="product_img">
+        <a href="#"><img src="C:\Users\a9018\Desktop\ShoppingMall\아이콘 자료\상품\남성_검정_샌들.jpg"></a>
+      </div>
+
+      <figcaption class="product_ment">
+        <h1>남성_검정_샌들</h1>
+        <p>남성_검정_샌들</p>
+      </figcaption>
+
+    </figure>
+
+  </div>
+
+</body>
+
+</html>
