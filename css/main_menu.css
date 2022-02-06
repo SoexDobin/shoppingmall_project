@@ -82,17 +82,111 @@
   z-index:150;
 }
 .mypage ul {
-  position: relative;
+  /* position: relative; */
   margin:0px;
   border:0px;
   padding: 5px 0px;
 }
-.mypage li {
+
+/* ==== 경훈 삭제 ==== */
+
+/* .mypage li {
   padding:4px 15px;
   font-size: 12px;
   text-align:left;
   line-height: 20px;
+} */
+
+
+/* ==== 경훈 추가 ==== ()*/
+
+/* 마이메뉴 드롭다운 블록 구현(디자인, 보이기X) */
+.mypage ul {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 86px;
+  padding: 3px 0 3px 0;
+  border: 1px solid #999999;
+  background: #ffffff;
+  z-index: 40;
 }
+/* 마우스 올리면 드롭다운 블록으로 보이기 */
+.mypage:hover ul{
+  display: block;
+}
+
+/* 드롭다운 내부 목록a태그 디자인 */
+.mypage ul a {
+  display: inline-block;
+  padding: 6px 5px 7px 10px;
+  color: #000;
+  font-size: 12px;
+}
+/* ================== 경훈 추가 중 ======================= */
+
+/* .content_info_wrap {
+  margin: 0 auto;
+  width: 1200px;
+  height: 1000px;
+}
+
+.content_info {
+  overflow: hidden;
+  padding: 50px 0 40px 0;
+  color: #b1b1b1;
+}
+
+.contact_us{
+  float: left;
+  width: 460px;
+}
+
+.content_info h3 {
+  padding: 0 0 0 12px;
+  color: #222222;
+  font-size: 14px;
+  background: url(https://www.naturestore.co.kr/data/skin/front/the_living/img/etc/blt_footer_line.png) left center no-repeat;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.content_info h3 img{
+  margin-top: 1px;
+}
+
+.contact_us_con {
+  overflow: hidden;
+}
+
+.contact_us_con > div:first-child {
+  width: 200px;
+  margin-left: 0;
+}
+
+.contact_us_con > div{
+  float: left;
+  width: 240px;
+  margin-left: 20px;
+}
+
+.content_info .cs_center {
+  float: left;
+  font-size: 15px;
+}
+
+.content_info .cs_center strong{
+  padding-right: 5px;
+}
+
+.content_info .cs_center p {
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: -.5px;
+} */
+/* ==== 경훈 추가 끝 ==== */
+
 
 /*전체메뉴 아이콘*/
 
