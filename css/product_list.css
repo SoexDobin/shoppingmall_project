@@ -5,33 +5,35 @@
   padding: 0;
   border: 0;
 }
-
 #product_list { /*포스터 전체*/
-  width: 1440px;
+  display: flex;
+  width: 80%;
+  height: auto;
   margin: 0 auto;
-  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 #product_list .product {
-  width:450px;
+  width:33%;
   float:left;
-  padding: 0 15px 65px 15px;
+
 }
 #product_list .product_img {
   display: flex;
   align-items: center; /* 수직 정렬 */
   flex-direction: row; /* default: row */
   justify-content: center; /* flex direction에 대해서 정렬방식 선택 */
-  max-width:450px;
+  width:450px;
   height:600px;
   overflow: hidden;
   background-color: azure;
 }
 #product_list .product_img img {
-  max-width: 450px;
+  width: 100%;
   object-fit: contain;
   transition: all 0.2s linear;
 }
-#product_list .product a:hover img {
+#product_list .product div:hover img {
   transform: scale(1.2);
 }
 #product_list .product_ment { /*포스터 내 글씨들*/

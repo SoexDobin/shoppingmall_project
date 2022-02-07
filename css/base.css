@@ -9,7 +9,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,texta
 dl,ul,ol,li { list-style: none; }
 
 /*색 초기화*/
-body { background:#fff; }
+body { background:#fff; min-width: 1440px;}
 
 /*폰트 동일 설정*/
 body,th,td,input,select,textarea,button {
