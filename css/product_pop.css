@@ -10,17 +10,17 @@
   align-items: center;
 }
 #product_list .product_overlay { /*팝업창 뒤 회색배경*/
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
-  position: absolute;
 }
 #product_list .product_info { /*팝업창*/
+  position:absolute;
   min-width: 700px;
   min-height: 700px;
   text-align: center; 
   background-color: white;
-  position:absolute;
 }
 #product_list .product_outb { /*팝업 나가기 버튼*/
   all:unset;
@@ -31,6 +31,6 @@
   padding:20px;
   position: absolute;
 }
-#product_list .product_hidden {
+#product_list .product_hidden{
   display:none; 
 }
