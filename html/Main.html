@@ -510,7 +510,7 @@
 
     <figure class="product">
 
-      <div class="product_img">
+      <div class="product_img" id="open">
         <img src="../아이콘 자료\상품\N_여성(women)_카키_롱슬리브(top).jpg">
       </div>
 
@@ -519,6 +519,20 @@
         <p>N_여성(women)_카키_롱슬리브(top)</p>
       </figcaption>
     </figure>
+
+    <!--팝업창-->
+    <div class="product_box product_hidden">
+
+      <div class="product_overlay"></div>
+
+      <div class="product_info"> 
+        <img src="../아이콘 자료\상품\N_여성(women)_카키_롱슬리브(top).jpg">
+        <h4>상품명</h4>
+        <p>코멘트</p>
+      </div>
+     
+      <button class="product_outb"><strong>X</strong></button>
+    </div>
 
     <figure class="product">
 
@@ -732,6 +746,7 @@
 
   </div>
 
+  <script type="text/javascript" src="../js\popup.js"></script>
 </body>
 
 </html>
