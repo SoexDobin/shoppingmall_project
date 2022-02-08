@@ -1,4 +1,4 @@
-.product_box { /*팝업창 위치*/
+#product_list .product_box { /*팝업창 위치*/
   position:fixed;
   top: 0;
   left: 0;
@@ -9,20 +9,20 @@
   justify-content: center;
   align-items: center;
 }
-.product_overlay { /*팝업창 뒤 회색배경*/
+#product_list .product_overlay { /*팝업창 뒤 회색배경*/
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
   position: absolute;
 }
-.product_info { /*팝업창*/
+#product_list .product_info { /*팝업창*/
   min-width: 700px;
   min-height: 700px;
   text-align: center; 
   background-color: white;
   position:absolute;
 }
-.product_outb { /*팝업 나가기 버튼*/
+#product_list .product_outb { /*팝업 나가기 버튼*/
   all:unset;
   background-color: rgba(0, 0, 0, .0);
   color: white;
@@ -31,6 +31,6 @@
   padding:20px;
   position: absolute;
 }
-.product_hidden {
+#product_list .product_hidden {
   display:none; 
 }

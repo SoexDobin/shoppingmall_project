@@ -1,4 +1,4 @@
-const openButton = document.getElementByClass("product_img");
+const openButton = document.getElementById("open");
 const modal = document.querySelector(".product_box");
 const overlay = modal.querySelector(".product_overlay");
 const closeBtn = modal.querySelector(".product_outb");
