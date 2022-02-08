@@ -7,23 +7,24 @@
 }
 #product_list { /*포스터 전체*/
   display: flex;
-  width: 80%;
+  width: 1440px;
   height: auto;
   margin: 0 auto;
   flex-direction: row;
   flex-wrap: wrap;
 }
 #product_list .product {
-  width:33%;
+  width:450px;
   float:left;
-
+  text-align: center;
+  padding: 0 15px 65px 15px ;
 }
 #product_list .product_img {
   display: flex;
   align-items: center; /* 수직 정렬 */
   flex-direction: row; /* default: row */
   justify-content: center; /* flex direction에 대해서 정렬방식 선택 */
-  width:450px;
+  width:100%;
   height:600px;
   overflow: hidden;
   background-color: azure;
