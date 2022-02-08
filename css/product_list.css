@@ -33,6 +33,7 @@
   width: 100%;
   object-fit: contain;
   transition: all 0.2s linear;
+  cursor: pointer;
 }
 #product_list .product div:hover img {
   transform: scale(1.2);
