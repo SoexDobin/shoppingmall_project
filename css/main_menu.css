@@ -28,7 +28,6 @@
   font-size: 20px;
   font-weight: 600;
   outline:none;
-
   height: 35px;
   padding: 5px 45px 5px 15px;
   box-sizing: border-box;
@@ -45,24 +44,21 @@
 }
 
 /* 상단 고객 메뉴 스타일 */
-/* 고객 메인메뉴박스 */
-.my_box {
+.my_box { /* 고객 메인메뉴박스 */
   position: absolute !important;
   top: 41px;
   right: 40px;
   width: 600px;
   height: 29px;
 }
-/* 상단 고객 메뉴 목록 */
-.my_menu {
+.my_menu { /* 상단 고객 메뉴 목록 */
   float: right;
   position: relative;
   margin: 0;
   line-height: 1;
   z-index: 150; 
 }
-/* 상단 고객 메뉴 레이아웃 설정 */
-.my_menu > li {
+.my_menu > li { /* 상단 고객 메뉴 레이아웃 설정 */
   float:left; 
   position:relative;
 }
@@ -88,18 +84,6 @@
   padding: 5px 0px;
 }
 
-/* ==== 경훈 삭제 ==== */
-
-/* .mypage li {
-  padding:4px 15px;
-  font-size: 12px;
-  text-align:left;
-  line-height: 20px;
-} */
-
-
-/* ==== 경훈 추가 ==== ()*/
-
 /* 마이메뉴 드롭다운 블록 구현(디자인, 보이기X) */
 .mypage ul {
   display: none;
@@ -112,7 +96,6 @@
   background: #ffffff;
   z-index: 40;
 }
-
 
 ul ul {
   margin-block-start: 0px;
@@ -136,250 +119,6 @@ ul ul {
 .mypage ul a:hover {
   background: yellow;
 }
-
-
-/* ================== 경훈 추가 중 ======================= */
-.content_info_wrap {
-  margin: 0 auto;
-  width: 1200px;
-}
-
-.content_info {
-  overflow: hidden;
-  padding: 50px 0 40px 0;
-  color: #b1b1b1;
-}
-
-.contact_us{
-  float: left;
-  width: 460px;
-}
-
-.content_info h3 {
-  padding: 0 0 0 12px;
-  color: #222222;
-  font-size: 14px;
-  background: url(https://www.naturestore.co.kr/data/skin/front/the_living/img/etc/blt_footer_line.png) left center no-repeat;
-  line-height: 20px;
-  margin-bottom: 30px;
-}
-
-.content_info h3 img{
-  margin-top: 1px;
-}
-
-.contact_us_con {
-  overflow: hidden;
-}
-
-.contact_us_con > div:first-child {
-  width: 200px;
-  margin-left: 0;
-}
-
-.contact_us_con > div{
-  float: left;
-  width: 240px;
-  margin-left: 20px;
-}
-
-.content_info .cs_center {
-  float: left;
-  font-size: 15px;
-}
-
-.content_info .cs_center strong{
-  padding-right: 5px;
-}
-
-.content_info .cs_center p {
-  font-size: 13px;
-  line-height: 23px;
-  letter-spacing: -.5px;
-}
-
-.content_info .bank_info {
-  float: left;
-  font-size: 15px;
-}
-
-.content_info .bank_info strong {
-  padding-right: 5px;
-}
-
-.content_info .bank_info p {
-  font-size: 13px;
-  line-height: 23px;
-}
-
-
-.content_info h3 {
-  padding: 0 0 0 12px;
-  color: #222222;
-  font-size: 14px;
-  background: url(https://www.naturestore.co.kr/data/skin/front/the_living/img/etc/blt_footer_line.png) left center no-repeat;
-  line-height: 20px;
-  margin-bottom: 30px;
-}
-
-.content_info h3 img{
-  margin-top: 1px;
-}
-
-.content_info .notice_list {
-  float: left;
-  width: 300px;
-  margin-left: 65px;
-}
-
-.content_info .notice_list ul {
-  padding: 0 0 0 0;
-  width: 299px;
-  margin-left: 1px;
-}
-
-.content_info .notice_list ul > li:first-child {
-  border-top: none;
-}
-
-.content_info .notice_list li {
-  padding: 2px 0 1px 0;
-  border-top: #383838 1px solid;
-}
-
-.content_info .notice_list ul a {
-  display: inline-block;
-  overflow: hidden;
-  width: 93%;
-  color: #b1b1b1;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: break-word;
-}
-
-.foot_list {
-  line-height: 1;
-  float: left;
-  width: 279px;
-  margin-left: 90px;
-}
-
-.foot_list ul {
-  overflow: hidden;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.foot_list ul li {
-  float: left;
-  padding: 0 0 13px;
-  width: 50%;
-}
-
-.foot_list ul li:first-child a {
-  padding-left: 0;
-}
-
-.foot_list ul li a {
-  font-weight: bold;
-  padding: 0;
-  color: #b1b1b1;
-  font-size: 12px;
-}
-
-
-#footer_wrap{
-  display:inline-block;
-  /*문제시 삭제(위 한줄)*/
-  position: relative;
-  width: 100%;
-  border-top: 1px solid #e3e3e3;
-  background: #2d2d2d;
-}
-
-
-#footer {
-  overflow: hidden;
-  padding: 0 0 40px 0;
-}
-
-.foot_cont {
-  overflow: hidden;
-  padding: 35px 0 0;
-  color: #555;
-  font-size: 12px;
-  line-height: 1.8;
-  text-align: center;
-}
-
-address{
-  display: block;
-  font-style: normal;
-  font-weight: normal;
-}
-
-.foot_cont .foot_info address strong {
-  padding-right: 8px;
-  background: url(https://www.naturestore.co.kr/data/skin/front/the_living/img/etc/blt_footer_line2.png) right center no-repeat;
-}
-
-.foot_cont .foot_info address > * {
-  display: inline-block;
-}
-
-.foot_cont .foot_info_list{
-  height: 21px;
-  overflow: hidden;
-  width: 100%;
-}
-
-.foot_cont .foot_info_list dl:first-child {
-  background: none;
-  padding-left: 0;
-}
-
-.foot_cont .foot_info_list dl {
-  display: inline-block;
-  background: url(https://www.naturestore.co.kr/data/skin/front/the_living/img/etc/blt_footer_line2.png) left center no-repeat;
-  padding-left: 8px;
-}
-
-.foot_cont .foot_info_list dt {
-  float: left;
-}
-
-.foot_cont .foot_info_list dd {
-  float: left;
-  padding: 0 3px 0 0;
-  
-  display: block;
-  
-}
-
-.foot_cont .copyright {
-  float: left;
-  width: 100%;
-  font-weight: bold;
-  margin-top: 25px;
-}
-
-.foot_certify {
-  overflow: hidden;
-  padding: 5px 0 15px 0;
-  text-align: right;
-}
-
-.foot_certify span:first-child {
-  padding: 0 10px 0 0;
-}
-
-.foot_certify span {
-  display: inline-block;
-  padding: 0 10px 0 10px;
-}
-
-/* ==== 경훈 추가 끝 ==== */
-
 
 /*전체메뉴 아이콘*/
 
@@ -444,28 +183,6 @@ address{
 #menuicon + label span:nth-child(1) { top: 0; }
 #menuicon + label span:nth-child(2) { top: 50%; transform: translateY(-50%); }
 #menuicon + label span:nth-child(3) { bottom: 0; }
-
-@keyframes slide {
-  from {
-    left: -400px;
-    opacity: 0;
-  }
-  to {
-    left: 0px;
-    opacity: 1;
-  }
-}
-
-@keyframes disappear {
-  from {
-    left: 0px;
-    opacity: 1;
-  }
-  to {
-    left: -400px;
-    opacity: 0;
-  }
-}
 
 .allmenu {
   width: 100%;
