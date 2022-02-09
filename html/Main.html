@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <!-- 파일 가져갈시 html, css, 이미지 경로 재설정할 것-->
-<!-- -->
+<!-- final 22/02/09 17:00 -->
 
 <html>
 
@@ -17,8 +17,19 @@
   <link rel="stylesheet" href="../css\photo_review.css">
   <!-- 메인화면 상품 리스트 css -->
   <link rel="stylesheet" href="../css\product_list.css">
-  <!-- 상품 팝업 창 css -->
+  <!-- 상품 팝업창 css -->
   <link rel="stylesheet" href="../css\product_pop.css">
+  <!-- 상품 검색창 css -->
+  <link rel="stylesheet" href="../css\searchform.css">
+  <!-- 푸터 css -->
+  <link rel="stylesheet" href="../css\footer.css">
+
+
+  <!-- font awesome national font 가져오기 -->
+  <script src="https://kit.fontawesome.com/15ebb873a6.js" crossorigin="anonymous"></script>
+
+  <!-- JQuery 첫방문시 자동 다운로드 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
   <meta charset="utf-8">
 
@@ -41,7 +52,7 @@
       </div>
 
       <!-- 검색 기능 -->
-      <div class="search_box">
+      <div class="search_box" id="searching">
 
         <form>
           <div class="#">
@@ -52,6 +63,31 @@
               <!-- 검색창 돋보기 버튼-->
               <input type="image" src="../아이콘 자료\아이콘\searching.png" id="search_btn" class="top_search_btn" title="검색"
                 value="검색" alt="검색">
+            </div>
+            <div class="search_cont" style="display:none;">
+              <div class="itembox">
+                <!-- class 수정 "1b_itembox" >>> "itembox" -->
+                <ul class="tab_list">
+                  <li class="recentkeyword">최근검색어</li>
+                  <li class="hitkeyword">인기검색어</li>
+                </ul>
+                <div class="item" id="recentkeyword_item">
+                  <!-- class 수정 "1b_item" >>> "item"  -->
+                  <div class="recent_box">
+                    <dl class="js_recent_area">
+                      <dt>
+                        <h1>최근검색어</h1>
+                      </dt>
+                      <dd>최근 검색어가 없습니다.</dd>
+                    </dl>
+                  </div>
+                  <div class="search_top_all">
+                    <button type="button" class="btn_top_search_close">
+                      <strong>닫기</strong>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </form>
@@ -505,13 +541,17 @@
     </div>
   </a>
 
+
+
+
+
   <!--================== 상품 리스트 목록 ==================-->
 
   <div id="product_list">
 
     <figure class="product">
 
-      <div class="product_img" id="open">
+      <div class="product_img">
         <img src="../아이콘 자료\상품\N_여성(women)_카키_롱슬리브(top).jpg">
       </div>
 
@@ -526,19 +566,41 @@
 
       <div class="product_overlay"></div>
 
-      <div class="product_info"> 
-        <img src="../아이콘 자료\상품\N_여성(women)_카키_롱슬리브(top).jpg">
-        <h4>상품명</h4>
-        <p>코멘트</p>
+      <div class="product_info">
+        <div class="info_img">
+          <img src="../아이콘 자료\상품\N_여성(women)_카키_롱슬리브(top).jpg">
+        </div>
+
+        <div class="info_ment">
+
+          <h3>N_여성(women)_카키_롱슬리브</h3>
+          <p>
+            hello-world!! hello-world!! hello-world!! hello-world!! hello-world!! hello-world!! hello-world!! hello-world!! hello-world!! hello-world!! hello-world!! hello-world!!
+            hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!
+          </p>
+
+          <div class="info_size">
+            <p>사이즈: m 95</p>
+            <p>컬러: 카키</p>
+          </div>
+          
+        </div>
+
+        <div class="btn_box">
+          <button class="product_btn btn_cart">장바구니</button>
+          <button class="product_btn btn_buy">구입하기</button>
+          <button class="product_btn btn_recommend">추천하기</button>
+        </div>
+
       </div>
-     
+
       <button class="product_outb"><strong>X</strong></button>
     </div>
-     <!--팝업창 끝-->
+    <!--팝업창 끝-->
 
     <figure class="product">
 
-      <div class="product_img" id="open">
+      <div class="product_img">
         <img src="../아이콘 자료\상품\남성_갈색_코트.jpg">
       </div>
 
@@ -553,15 +615,36 @@
 
       <div class="product_overlay"></div>
 
-      <div class="product_info"> 
-        <img src="../아이콘 자료\상품\남성_갈색_코트.jpg">
-        <h4>상품명</h4>
-        <p>코멘트</p>
+      <div class="product_info">
+        <div class="info_img">
+          <img src="../아이콘 자료\상품\남성_갈색_코트.jpg">
+        </div>
+
+        <div class="info_ment">
+
+          <h3>남성_갈색_코트</h3>
+          <p>
+            hello-world!! hello-world!! hello-world!! hello-world!! hello-world!! hello-world!! hello-world!! hello-world!! hello-world!! hello-world!! hello-world!! hello-world!!
+            hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!hello-world!!
+          </p>
+
+          <div class="info_size">
+            <p>사이즈: L 100</p>
+            <p>컬러: 갈색</p>
+          </div>
+          
+        </div>
+
+        <div class="btn_box">
+          <button class="product_btn btn_cart">장바구니</button>
+          <button class="product_btn btn_buy">구입하기</button>
+          <button class="product_btn btn_recommend">추천하기</button>
+        </div>
+
+        <button class="product_outb"><strong>X</strong></button>
       </div>
-     
-      <button class="product_outb"><strong>X</strong></button>
     </div>
-     <!--팝업창 끝-->
+    <!--팝업창 끝-->
 
     <figure class="product">
 
@@ -581,15 +664,15 @@
 
       <div class="product_overlay"></div>
 
-      <div class="product_info"> 
+      <div class="product_info">
         <img src="../아이콘 자료\상품\여성_흰색_카고바지.jpg">
         <h4>상품명</h4>
         <p>코멘트</p>
       </div>
-     
+
       <button class="product_outb"><strong>X</strong></button>
     </div>
-     <!--팝업창 끝-->
+    <!--팝업창 끝-->
 
     <figure class="product">
 
@@ -609,15 +692,15 @@
 
       <div class="product_overlay"></div>
 
-      <div class="product_info"> 
+      <div class="product_info">
         <img src="../아이콘 자료\상품\여성_청색_아우터.jpg">
         <h4>상품명</h4>
         <p>코멘트</p>
       </div>
-     
+
       <button class="product_outb"><strong>X</strong></button>
     </div>
-     <!--팝업창 끝-->
+    <!--팝업창 끝-->
 
     <figure class="product">
 
@@ -637,15 +720,15 @@
 
       <div class="product_overlay"></div>
 
-      <div class="product_info"> 
+      <div class="product_info">
         <img src="../아이콘 자료\상품\남성_검정_샌들.jpg">
         <h4>상품명</h4>
         <p>코멘트</p>
       </div>
-     
+
       <button class="product_outb"><strong>X</strong></button>
     </div>
-     <!--팝업창 끝-->
+    <!--팝업창 끝-->
 
     <figure class="product">
 
@@ -665,15 +748,15 @@
 
       <div class="product_overlay"></div>
 
-      <div class="product_info"> 
+      <div class="product_info">
         <img src="../아이콘 자료\상품\여성_회색_맨투맨.jpg">
         <h4>상품명</h4>
         <p>코멘트</p>
       </div>
-     
+
       <button class="product_outb"><strong>X</strong></button>
     </div>
-     <!--팝업창 끝-->
+    <!--팝업창 끝-->
 
     <figure class="product">
 
@@ -693,29 +776,28 @@
 
       <div class="product_overlay"></div>
 
-      <div class="product_info"> 
+      <div class="product_info">
         <img src="../아이콘 자료\상품\공용_흰색_가방.jpg">
         <h4>상품명</h4>
         <p>코멘트</p>
       </div>
-     
+
       <button class="product_outb"><strong>X</strong></button>
     </div>
-     <!--팝업창 끝-->
+    <!--팝업창 끝-->
 
   </div>
 
-  <!-- 경훈 추가 --  ======= 하단 ======= -->
+  <!-- ======= 경훈 추가 하단 ======= -->
 
-<!--
-  <div style="width:1440px; margin:0 auto; text-align:center; display: block;">
-    <a class="fa fa-facebook">d</a>
-    <a class="fa fa-facebook">a</a>
-    <a class="fa fa-facebook">b</a>
-    <a class="fa fa-facebook">c</a>
+  <div style="width:1440px;  margin:80px auto;  text-align:center; display: block;">
+    <a class="fa fa-facebook"></a>
+    <a class="fa fa-youtube"></a>
+    <a class="fa fa-instagram"></a>
+    <a class="fa fa-blog"></a>
   </div>
--->
-  <!-- 경훈추가 ======== 하단 푸터 ========= -->
+
+  <!-- 푸터 -->
   <div id="footer_wrap">
     <div class="content_info_wrap">
       <div class="content_info">
@@ -838,7 +920,8 @@
 
   </div>
 
-  <script type="text/javascript" src="../js\popup.js"></script>
+  <script type="text/javascript" src="../js\popup.js"></script> <!-- 팝업창 스크립트 -->
+  <script type="text/javascript" src="../js\searchform.js"></script> <!-- 검색창 스크립트 -->
 </body>
 
 </html>
