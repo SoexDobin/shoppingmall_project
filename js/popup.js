@@ -6,7 +6,6 @@ const closeBtn = modal.querySelector(".product_outb");
 // 모달 열기 이벤트 메서드
 const openModal = () => {
     modal.classList.remove("product_hidden");
-    
 } 
 // 모달 닫기 이벤트 메서드
 const closeModal = () => { 
@@ -28,9 +27,11 @@ $(document).ready(function(){
   $('.product_img').click(function(){
     modal.classList.remove("product_hidden");
     document.querySelector(".product_box .product_info img").src = $(this).children('img').attr("src");
-    document.querySelector(".product_box .info_ment span").innerTEXT = $(this).siblings('figcaption').children('span').text();
-    document.querySelector(".product_box .info_ment span").innerTEXT = $(this).siblings('figcaption').children('span').text();
+    document.querySelector(".product_box .info_ment span").innerText = $(this).siblings('figcaption').children('span').text();
+    document.querySelector(".product_box .info_ment span").nextSibling.innerText = $(this).siblings('figcaption').children('span').siblings('span').text();
     console.log($(this).children('img').attr("src"));
-    console.log($(this).siblings('figcaption').children('h1').attr('innerTEXT'));
+    console.log($(this).siblings('figcaption').children('span').text());
+    console.log(document.querySelector(".product_box .info_ment span").nextSibling.innerText);
   });
 });
+// 
