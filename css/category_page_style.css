@@ -1,0 +1,1501 @@
+/*페이지 기본 설정*/
+
+/*값 초기화*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {
+  margin:0;
+  padding:0;
+}
+/*리스트 태그 점 삭제*/
+dl,ul,ol,li { list-style: none; }
+
+/*색 초기화*/
+body { background:#fff; min-width: 1440px;}
+
+/*폰트 동일 설정*/
+body,th,td,input,select,textarea,button {
+  font-family:'Montserrat', sans-serif, 'Noto Sans KR', Malgun Gothic,"맑은 고딕",AppleGothic,Dotum,"돋움"; 
+  font-size:14px; 
+  color:#000; 
+  font-weight: 400; 
+  line-height: 1.5;
+}
+
+/*A태그 밑줄 제거*/
+a { color:#333; text-decoration:none; }
+a:active, a:hover { text-decoration:none; }
+
+/*이미지 정렬 초기화*/
+img{ border: 0 none; vertical-align: top; }
+
+
+
+
+
+
+
+
+/* 헤더부분 전체 */
+#header {
+  position:relative; 
+}
+
+.top_header {
+  position:relative;
+  display:flex;
+  justify-content:space-between;
+}
+
+/* 상단 로고 설정 */
+#header .logo { padding:30px 0 30px 40px; }
+#header .logo img { width:210px; }
+
+/* 검색창 스타일 */
+#header .search_box { /* 상단 검색창 틀 위치 */
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  margin-left: 319px;
+  background-color: #fff;
+  z-index: 110;
+}
+#search_form { /* 검색창 서식 */
+  border: none 0;
+  vertical-align: top;
+  font-size: 20px;
+  font-weight: 600;
+  outline:none;
+
+  height: 35px;
+  padding: 5px 45px 5px 15px;
+  box-sizing: border-box;
+  background: #fff;
+  border-bottom: 2px solid #404040;
+  color: #000;
+}
+#search_btn { /*검색창 돋보기 아이콘 스타일*/
+  vertical-align: top;
+  height: 35px;
+  box-sizing: border-box;
+  position:absolute;
+  border-bottom: 2px solid #404040;
+}
+
+/* ====== 경훈 추가 시작 22 02 08 ===== */
+
+.tab_list {
+  background-color: #fff;
+  width: 100%;
+}
+.tab_list .recentkeyword {
+  color: #000;
+  background-color: #f5f5f5;
+}
+.tab_list .hitkeyword {
+  color: #000;
+  background-color: #fff;
+}
+
+.tab_list li {
+  display: inline-block;
+  font-family: "Geograph-8";
+  font-size: 12px;
+  padding: 0;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  width: 49.8%;
+}
+
+/* ====== 경훈 추가 끝 22 02 08 ===== */
+
+/* =====  경훈 추가 시작 22 02 09 ====== */
+
+.search_box .search_cont {
+  display: block;
+  margin: 0;
+  font-size: 0;
+  border-top: 1px solid #cccccc;
+  background: #ffffff;
+}
+
+.1b_itembox .1b_item {
+  width: 100%;
+  margin: 0;
+}
+
+.recent_box {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  min-height: 65px;
+  font-size: 12px;
+  text-align: center;
+  border-right: none 0;
+  vertical-align: top;
+}
+
+.recent_box dl {
+  padding: 20px 40px 40px 40px;
+  text-align: left;
+}
+
+.recent_box dt {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.recent_box dd {
+  padding: 5px 0 0 0;
+}
+
+.js_recent_area h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #474747;
+  margin-bottom: 15px;
+}
+
+.search_top_all {
+  overflow: hidden;
+  width: 100%;
+  height: 30px;
+  background: #f5f5f5;
+  clear: both;
+}
+
+.search_top_all .btn_top_search_close {
+  float: right;
+  padding: 0 15px 0 15px;
+  color: #999999;
+  font-size: 11px;
+  line-height: 30px;
+}
+
+.search_top_all button {
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: 0;
+}
+
+.search_top_all strong{
+  font-weight: normal;
+}
+
+/* =====  경훈 추가 끝 22 02 09 =====   */
+
+
+/* 상단 고객 메뉴 스타일 */
+/* 고객 메인메뉴박스 */
+.my_box {
+  position: absolute !important;
+  top: 41px;
+  right: 40px;
+  width: 600px;
+  height: 29px;
+}
+/* 상단 고객 메뉴 목록 */
+.my_menu {
+  float: right;
+  position: relative;
+  margin: 0;
+  line-height: 1;
+  z-index: 150; 
+}
+/* 상단 고객 메뉴 레이아웃 설정 */
+.my_menu > li {
+  float:left; 
+  position:relative;
+}
+.my_menu > li a {
+  display:inline-block; 
+  padding:4px 0 4px 15px; 
+  color:#000; 
+  font-size:12px;
+}
+
+/* 마이페이지 서브 메뉴 스타일*/
+.mypage_menu:hover ul{
+  display:inline-block;
+  position:absolute;
+  background-color: white;
+  border: 1px solid gray;
+  z-index:150;
+}
+.mypage ul {
+  /* position: relative; */
+  margin:0px;
+  border:0px;
+  padding: 5px 0px;
+}
+
+/* ==== 경훈 삭제 ==== */
+
+/* .mypage li {
+  padding:4px 15px;
+  font-size: 12px;
+  text-align:left;
+  line-height: 20px;
+} */
+
+
+/* ==== 경훈 추가 ==== ()*/
+
+/* 마이메뉴 드롭다운 블록 구현(디자인, 보이기X) */
+.mypage ul {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 86px;
+  padding: 3px 0 3px 0;
+  border: 1px solid #999999;
+  background: #ffffff;
+  z-index: 40;
+}
+
+
+ul ul {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+/* 마우스 올리면 드롭다운 블록으로 보이기 */
+.mypage:hover ul{
+  display: block;
+}
+
+/* 드롭다운 내부 목록a태그 디자인 */
+.mypage ul a {
+  display: inline-block;
+  width: 70px;
+  padding: 6px 5px 7px 10px;
+  color: #000;
+  font-size: 12px;
+}
+
+.mypage ul a:hover {
+  background: yellow;
+}
+
+
+/* ================== 경훈 추가 중 ======================= */
+.content_info_wrap {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.content_info {
+  overflow: hidden;
+  padding: 50px 0 40px 0;
+  color: #b1b1b1;
+}
+
+.contact_us{
+  float: left;
+  width: 460px;
+}
+
+.content_info h3 {
+  padding: 0 0 0 12px;
+  color: #222222;
+  font-size: 14px;
+  background: url(https://www.naturestore.co.kr/data/skin/front/the_living/img/etc/blt_footer_line.png) left center no-repeat;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.content_info h3 img{
+  margin-top: 1px;
+}
+
+.contact_us_con {
+  overflow: hidden;
+}
+
+.contact_us_con > div:first-child {
+  width: 200px;
+  margin-left: 0;
+}
+
+.contact_us_con > div{
+  float: left;
+  width: 240px;
+  margin-left: 20px;
+}
+
+.content_info .cs_center {
+  float: left;
+  font-size: 15px;
+}
+
+.content_info .cs_center strong{
+  padding-right: 5px;
+}
+
+.content_info .cs_center p {
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: -.5px;
+}
+
+.content_info .bank_info {
+  float: left;
+  font-size: 15px;
+}
+
+.content_info .bank_info strong {
+  padding-right: 5px;
+}
+
+.content_info .bank_info p {
+  font-size: 13px;
+  line-height: 23px;
+}
+
+
+.content_info h3 {
+  padding: 0 0 0 12px;
+  color: #222222;
+  font-size: 14px;
+  background: url(https://www.naturestore.co.kr/data/skin/front/the_living/img/etc/blt_footer_line.png) left center no-repeat;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.content_info h3 img{
+  margin-top: 1px;
+}
+
+.content_info .notice_list {
+  float: left;
+  width: 300px;
+  margin-left: 65px;
+}
+
+.content_info .notice_list ul {
+  padding: 0 0 0 0;
+  width: 299px;
+  margin-left: 1px;
+}
+
+.content_info .notice_list ul > li:first-child {
+  border-top: none;
+}
+
+.content_info .notice_list li {
+  padding: 2px 0 1px 0;
+  border-top: #383838 1px solid;
+}
+
+.content_info .notice_list ul a {
+  display: inline-block;
+  overflow: hidden;
+  width: 93%;
+  color: #b1b1b1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.foot_list {
+  line-height: 1;
+  float: left;
+  width: 279px;
+  margin-left: 90px;
+}
+
+.foot_list ul {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.foot_list ul li {
+  float: left;
+  padding: 0 0 13px;
+  width: 50%;
+}
+
+.foot_list ul li:first-child a {
+  padding-left: 0;
+}
+
+.foot_list ul li a {
+  font-weight: bold;
+  padding: 0;
+  color: #b1b1b1;
+  font-size: 12px;
+}
+
+
+#footer_wrap{
+  display:inline-block;
+  /*문제시 삭제(위 한줄)*/
+  position: relative;
+  width: 100%;
+  border-top: 1px solid #e3e3e3;
+  background: #2d2d2d;
+}
+
+
+#footer {
+  overflow: hidden;
+  padding: 0 0 40px 0;
+}
+
+.foot_cont {
+  overflow: hidden;
+  padding: 35px 0 0;
+  color: #555;
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+address{
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.foot_cont .foot_info address strong {
+  padding-right: 8px;
+  background: url(https://www.naturestore.co.kr/data/skin/front/the_living/img/etc/blt_footer_line2.png) right center no-repeat;
+}
+
+.foot_cont .foot_info address > * {
+  display: inline-block;
+}
+
+.foot_cont .foot_info_list{
+  height: 21px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.foot_cont .foot_info_list dl:first-child {
+  background: none;
+  padding-left: 0;
+}
+
+.foot_cont .foot_info_list dl {
+  display: inline-block;
+  background: url(https://www.naturestore.co.kr/data/skin/front/the_living/img/etc/blt_footer_line2.png) left center no-repeat;
+  padding-left: 8px;
+}
+
+.foot_cont .foot_info_list dt {
+  float: left;
+}
+
+.foot_cont .foot_info_list dd {
+  float: left;
+  padding: 0 3px 0 0;
+  
+  display: block;
+  
+}
+
+.foot_cont .copyright {
+  float: left;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.foot_certify {
+  overflow: hidden;
+  padding: 5px 0 15px 0;
+  text-align: right;
+}
+
+.foot_certify span:first-child {
+  padding: 0 10px 0 0;
+}
+
+.foot_certify span {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+}
+
+/* ==== 경훈 추가 끝 ==== */
+
+
+/*전체메뉴 아이콘*/
+
+#sub_header .allmenu_box { /* 전체메뉴 아이콘 위치 설정 */
+  width:100%;
+  height:0;
+  position: absolute;
+  left: 37px;
+}
+#sub_header .allmenu_box label {
+  text-align: center;
+}
+.allmenu-list div { /* 목록박스 하단 경계선 */
+  border-bottom: 1px solid rgb(202, 202, 202);
+  width: 100px;
+  padding-bottom: 5px;
+}
+.allmenu-list li { /* 목록간 간격 */
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.point { /* 주목록 폰트 두껍게 */
+  color: black;
+  font-weight: 900;
+}
+
+/* 전체메뉴는 체크박스 표시를 통해 열고 닫음 & 그 반응을 통한 디자인적 요소가 포함되어있음 */
+#menuicon { display: none; } /* 체크 박스 안보이게 */
+#menuicon + label { /* 전체메뉴 아이콘 디자인 */
+  display: block;
+  width: 35px;
+  height: 30px;
+  position: absolute;
+  top: 9.5px;
+  z-index: 300;
+  cursor:pointer;
+}
+#menuicon + label > span { /* 전체메뉴 아이콘 세부디자인과 자연스럽게 아이콘 변경 가능한 css*/
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 30px;
+  background: white;
+  transition: all 0.35s;
+}
+/* span으로 만든 아이콘 위치 및 변형을 위한 값 주기 */
+#menuicon:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: 2;
+}
+#menuicon:checked + label span:nth-child(2) {
+  z-index: 2;
+  opacity: 0;
+}
+#menuicon:checked + label span:nth-child(3) {
+  z-index: 2;
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+#menuicon + label span:nth-child(1) { top: 0; }
+#menuicon + label span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+#menuicon + label span:nth-child(3) { bottom: 0; }
+
+@keyframes slide {
+  from {
+    left: -400px;
+    opacity: 0;
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  from {
+    left: 0px;
+    opacity: 1;
+  }
+  to {
+    left: -400px;
+    opacity: 0;
+  }
+}
+
+.allmenu {
+  width: 100%;
+  height: 680px;
+  background: black;
+  position: absolute;
+  top: 52px;
+  left: 0;
+  z-index: 0;
+  transition: all 0.35s;
+}
+#menuicon:checked + label + div {
+  top: 52px;
+  height: 550px;
+  z-index: 4;
+}
+
+
+/* 검은바 메뉴 스타일*/
+#sub_header { /* 박스 크기 및 색깔 설정 */
+  background-color: black;
+  height: 50px;
+  width:100%;                 /* 100%만큼 공간생성 */
+  margin-left:0px;            /* 왼쪽 여백 0px */
+  margin-top: -21; /*카테고리 박스 상단까지의 거리 21px*/
+}
+#sub_header .submenu { /* 카테고리 우측 정렬 */
+  font-size:0;                /* 폰트 초기화 */
+  display: flex; 
+  justify-content: flex-end; /* 우측 정렬 */
+}
+#sub_header .submenu > li {
+  position:relative;
+  display:inline-block;
+  vertical-align:top;
+  text-align: center;
+  cursor: pointer;
+  min-width: 130px; 
+  right:0;                                       
+}
+#sub_header .submenu > li > a { /* 디스플레이되있는 a태그 카테고리 글씨 및 박스 설정 */
+  padding:15px 30px; 
+  min-width:70px; 
+  font-size:12px; 
+  font-weight:bold; 
+  text-align:center; 
+  line-height:50px; 
+  color:#fff;
+  white-space: nowrap;
+}
+
+/* sub1 기본 설정 */
+#sub_header .submenu .sub1 {              
+  display:none;                    /* 처음엔 보이지않게 */
+  position:absolute;               /* 포지션 절대값 */
+  top:50px; left:0;                /* 위로부터 50px 밀기 */
+  width:100%;                      /* 가로넓이 160px */
+  background:rgba(0,0,0,.6);     /* 색: 블랙 투명도60% */
+  z-index:100;                     /* 창이 가장 먼저보이게 z-index높게 설정(100정도면 제일 위에 보이겠지) */
+}
+#sub_header .submenu .sub1 > li { /* sub1 ul에 속한 li의 위치 설정 */
+  position:relative;              /* 포지션 상대값 */
+  text-align: left;
+}
+#sub_header .submenu .sub1 > li > a { /* sub1 a 위치 및 폰트 설정 */
+  display: block;                 /* 블록으로 설정 */
+  padding:5px 10px 7px 19px;      /* 패딩 설정 */
+  font-size:12px;                 /* 글씨 크기 설정 */
+  color:#e7e7e7;                /* 글씨 기본 색: 하양 */
+}
+#sub_header .submenu .sub1 > li:hover > ul { /* sub1의 ul 블럭으로 보이게 설정 */
+  display: block;
+}
+/* sub2 기본 설정 */
+#sub_header .submenu .sub2 {
+  display:none;                   /* 처음엔 보이지않게 */
+  position:absolute;              /* 포지션 절대값 */
+  top:0; left:100%;               /* 100% 밀기 */
+  width:160px;                    /* 가로넓이 160px */
+  background:rgba(0,0,0,.6);    /* 색: 블랙 투명도60% */
+  z-index:100;                    /* 창이 가장 먼저보이게 z-index높게 설정(100정도면 제일 위에 보이겠지) */
+}
+#sub_header .submenu .sub2 > li { /* sub2 ul에 속한 li의 위치 설정 */
+  position: relative;             /* 포지션 상대값 */
+}
+#sub_header .submenu .sub2 > li > a { /* li 안의 a태그 설정 */
+  display: block;                 /* 블록으로 설정 */
+  padding:5px 10px 7px 19px;      /* 패딩 설정 */
+  font-size:12px;                 /* 글씨 크기 설정 */
+  color:#e7e7e7;                /* 글씨 기본 색: 하양 */
+}
+#sub_header .submenu .sub2 > li:hover ul { /* sub2의 ul 블럭으로 보이게 설정 */ 
+  display: block;
+}
+/* sub3의 기본설정 */
+#sub_header .submenu .sub3 {              
+  display:none;                   /* 처음엔 보이지않게 */
+  position:absolute;              /* 포지션 절대값 */
+  top:0; left:100%;               /* 100% 밀기 */
+  width:160px;                    /* 가로넓이 160px */
+  background:rgba(0,0,0,.6);    /* 색: 블랙 투명도60% */
+}
+#sub_header .submenu .sub3 > li { /* sub3 ul에 속한 li의 위치 설정 */
+  position: relative;             /* 포지션 상대값 */
+}
+#sub_header .submenu .sub3 > li > a { /* li 안의 a태그 설정 */
+  display: block;                 /* 블록으로 설정 */
+  padding:5px 10px 7px 19px;      /* 패딩 설정 */
+  font-size:12px;                 /* 글씨 크기 설정 */
+  color:#e7e7e7;                /* 글씨 기본 색: 하양 */
+}
+
+/* submenu 부속기능*/
+#sub_header .submenu > li:hover > a { color:#ffdb00; } /* .submenu 커서 올릴때 폰트 색*/
+#sub_header .submenu > li:hover > ul { display: block; }
+#sub_header .submenu .sub1 li:hover { background-color: #545454; color:#ffffff } /* 드롭다운 커서 올렸을대 색깔 변경*/
+
+
+
+
+
+
+
+
+
+
+/* =======================포토 리뷰 화면 구성============================== */
+
+
+#photo_review { /* 포토 리뷰 크기 지정 */
+  width: 1440px;
+  margin: 0 auto;
+  min-width: 1440px;
+  height: 630px;
+  box-sizing: border-box;
+}
+#photo_review .review_head { /* 포토리뷰 대문 박스 */
+  text-align: center;
+  padding: 40px;
+  font-weight:bold;
+  line-height:1.3;
+  margin-top: 0px;
+}
+/* 이벤트 대문 폰트 크기 설정 */
+#photo_review .review_head .main_head { font-size: 30px; }
+#photo_review .review_head .sub_head { font-size: 18px; }
+
+
+#photo_review .review_box { /* 리뷰목록 가운데 정렬 및 전체 폰트 좌측 정렬*/
+  display: inline-block;
+  margin:0 auto;
+}
+#photo_review .review_box .review { /* 리뷰 목록 가로 정렬 및 각각 크기 */
+  float: left;
+  width:202px;
+  padding: 19px;
+}
+
+#photo_review img.review_img { /* 포토 리뷰에 넣을 이미지 크기 조정 */
+  max-width:202px;
+  max-height:202px;
+  overflow: hidden;
+  background-color: gold; /* 박스 색상 지정 알아서 박스 잘 맞출 것 */
+}
+
+#photo_review #star { /* 평점으로 쓸 별의 색깔 변경해주기 */
+  color : rgb(255, 166, 0);
+  display:inline; 
+}
+
+/* 포토 리뷰 '더보기' 버튼 */
+#btn_more_review {
+  width: 200px;
+    margin: 0 auto 100px auto;
+    padding: 10px;
+    background-color: #111;
+    box-sizing: border-box;
+    text-align: center;
+    color: #f7f7f7;
+}
+
+
+
+
+
+
+
+
+/* 상품 리스트 css*/
+
+#product_list figure { /* 초기화 */
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+#product_list { /*포스터 전체*/
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#product_list .product {
+  width:33%;
+  float:left;
+
+}
+#product_list .product_img {
+  display: flex;
+  align-items: center; /* 수직 정렬 */
+  flex-direction: row; /* default: row */
+  justify-content: center; /* flex direction에 대해서 정렬방식 선택 */
+  width:450px;
+  height:600px;
+  overflow: hidden;
+  background-color: azure;
+}
+#product_list .product_img img {
+  width: 100%;
+  object-fit: contain;
+  transition: all 0.2s linear;
+}
+#product_list .product div:hover img {
+  transform: scale(1.2);
+}
+#product_list .product_ment { /*포스터 내 글씨들*/
+  max-width:450px;
+  padding: 0 15px;
+  text-align: left;
+}
+#product_list .product_ment h1 { /* 큰 글씨 스타일*/
+  margin-bottom: 15px;
+  margin-top: 25px;
+  line-height: 35px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  font-size: 1.8em;
+}
+
+
+
+
+
+
+#product_list .product_box { /*팝업창 위치*/
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#product_list .product_overlay { /*팝업창 뒤 회색배경*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+#product_list .product_info { /*팝업창*/
+  position:absolute;
+  min-width: 700px;
+  min-height: 700px;
+  text-align: center; 
+  background-color: white;
+}
+#product_list .product_outb { /*팝업 나가기 버튼*/
+  all:unset;
+  background-color: rgba(0, 0, 0, .0);
+  color: white;
+  opacity: 0.6;
+  cursor: pointer;
+  padding:20px;
+  position: absolute;
+}
+#product_list .product_hidden{
+  display:none; 
+}
+
+
+
+
+
+
+/* 슬라이드 배너 구역 지정 */
+.slidebanner_container {
+    position: relative;
+    min-width: 100%;
+    height: 700px;
+    overflow:hidden;
+    background-color: gold;
+    z-index: 50;
+}
+
+#slide_box .slide {
+  text-align: center;
+}
+
+#slide_box .slide img {
+  min-width:2000px;
+  height: auto;
+}
+
+/* 좌우에 있는 이전/다음 슬라이드 버튼 */
+#slide_box .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -90px;
+    color: white;
+    font-size: 70px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+/* 다음 슬라이드 버튼은 오른쪽에 오게 조정 */
+#slide_box .next {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+/* 슬라이드 아래쪽 점 버튼 집합 */
+.dotlist {
+    bottom: 100px;
+    position: relative;
+    text-align:center;
+    z-index: 100;
+}
+/* 슬라이드 아래쪽 각각의 점 버튼 */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.6s ease;
+}
+
+/* 점 버튼이 활성화(해당되는 슬라이드가 현재 보여지고 있을 경우)시 그 점을 노란색으로 지정 */
+.active {
+  background-color: rgb(255, 208, 0);
+}
+
+
+
+
+
+/*경훈 추가*/
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  
+  display: inline-block;
+  font: normal normal normal 14px/1;
+  font-family: "Font Awesome 5 Brands";
+  font-size: inherit;
+  text-rendering: auto;
+}
+
+.fa-facebook {
+  background: #385998;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-blog {
+  background: green;
+  color: white;
+}
+
+
+
+
+/* =====  경훈 추가 끝 22 02 09 =====   */
+
+
+
+#wrap{
+  position: relative;
+  min-width: 1440px;
+}
+
+#container{
+  margin-top: -1px;
+  border-top: 1px solid #cccccc;
+  
+}
+
+.contents{
+  min-height: 400px;
+  padding: 0 0 80px 0;
+}
+
+.sub_content_category{
+  width: 100%;
+  margin: 0 auto;
+  padding: 45px 0 0 0;
+}
+
+#sidebar{
+  background: #fff;
+  float: left;
+  width: 15%;
+  height: 40px;
+  border-bottom: 1px solid #000;
+  margin: 0 0 20px 20px;
+}
+
+h2{
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+#cssmenu1{
+  width: 100%;
+  font-family: Raleway, sans-serif;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dedede;
+}
+
+#cssmenu1, #cssmenu1 ul, #cssmenu1 ul li, #cssmenu1 ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.sub_menu_box.tree_type ul{
+  border: none 0;
+}
+
+.sub_menu_box .sub_depth0 {
+  padding: 0;
+  font-size: 0;
+  vertical-align: top;
+  border: none;
+}
+
+#cssmenu1 ul > li.has-sub > a:before {
+  position: absolute;
+  right: 22px;
+  top: 23px;
+  display: block;
+  width: 10px;
+  height: 2px;
+  background: #000;
+  content: "";
+  transition: all 0.1s ease-out;
+}
+
+#cssmenu1 ul > li.has-sub > a:after {
+  position: absolute;
+  right: 26px;
+  top: 19px;
+  z-index: 5;
+  display: block;
+  height: 10px;
+  width: 2px;
+  background: #000;
+  content: "";
+  transition: all 0.1s ease-out;
+}
+
+#cssmenu1 > ul > li > a {
+  padding: 12px 0 10px 10px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  transition: color .2s ease;
+}
+
+.sub_menu_box .sub_depth0 > li > a {
+  display: block;
+  padding: 0 10px 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.sub_menu_box.tree_type .sub_depth1{
+  display: block;
+  position: static;
+  padding: 0 0 0 15px;
+}
+
+ul ul{
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+#cssmenu1 ul ul li a{
+  padding: 9px 0 7px 15px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 12px;
+  text-decoration: none;
+  color: #343434;
+  background: #fff;
+  transition: color .2s ease;
+}
+
+
+.sub_menu_box .sub_depth1 li a{
+  display: block;
+  padding: 5px 10px 7px 19px;
+  font-size: 12px;
+}
+
+
+.sub_menu_box .sub_depth1 > li > a{
+  display: block;
+  padding: 5px 10px 7px 19px;
+  font-size: 12px;
+}
+
+
+
+.sub_content_category .content{
+  width: 80%;
+  min-height: 500px;
+  padding: 0 0 0 15px;
+  float: left;
+}
+
+.sub_content_category .location_wrap{
+  margin: -25px 0 15px 0;
+  border-bottom: none 0;
+}
+
+.location_wrap{
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #cdcdcd;
+  background: #f9f9f9;
+}
+
+.location_wrap .location_cont{
+  width: 98%;
+  margin: 0 0 0 12px;
+}
+
+
+.location_cont em{
+  display: block;
+  float: left;
+  padding: 12px 0 10px 0;
+  color: #777777;
+  font-size: 11px;
+}
+
+address, caption, cite, code, dfn, em, var{
+  font-style: normal;
+  font-weight: normal;
+}
+
+.location_cont .local_home{
+  color: #777777;
+}
+
+.location_select{
+  display: inline-block;
+  position: relative;
+  min-width: 150px;
+  margin: 7px 0 0 0;
+  border: 1px solid #999999;
+  z-index: 50;
+}
+
+.location_select .location_tit{
+  background: url(	https://www.naturestore.co.kr/data/skin/front/the_living/img/etc/select_arrow_down_11x7.png) no-repeat right center;
+}
+
+.location_select .location_tit a {
+  display: block;
+  padding: 3px 32px 3px 9px;
+  font-size: 11px;
+}
+
+.location_select ul{
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  width: 100%;
+  margin-left: -1px;
+  padding: 6px 0 6px 0;
+  font-size: 0;
+  border: 1px solid #999999;
+  background: #ffffff;
+}
+
+.location_select ul li{
+  padding: 4px 0 4px 9px;
+}
+
+
+.picked_list {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 150px;
+}
+
+.location_select ul li a {
+  display: block;
+  padding: 4px 5px 5px 10px;
+  font-size: 11px;
+}
+
+.location_select ul li a span{
+  display: inline-block;
+}
+
+.goods_list_item{
+  width: 80%;
+  position: relative;
+  margin: 0 12px 0 12px;
+}
+
+.list_item_category{
+  margin: 0 0 40px 0;
+  padding: 3px 0 3px 0;
+  border: 1px solid #d8d8d8;
+}
+
+.list_item_category ul{
+  display: inline-block;
+  width: 100%;
+  padding: 0 20px 0 20px;
+  font-size: 0;
+}
+
+.list_item_category li{
+  display: inline-block;
+  width: 20%;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+
+.goods_pick_list .goods_pick_num{
+  display: block;
+  padding: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.goods_pick_list .goods_pick_num strong{
+  color: #ab3e55;
+}
+
+strong{
+  font-weight: bold;
+}
+
+.goods_pick_list .pick_list_box{
+  height: 28px;
+  margin: 0 0 20px 0;
+  padding: 9px 0 10px 0;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #dbdbdb;
+  clear: both;
+}
+
+.goods_pick_list .pick_list_box .pick_list{
+  display: inline-block;
+  float: left;
+  padding: 0 0 0 10px;
+}
+
+.goods_pick_list .pick_list_box .pick_list li{
+  float: left;
+  margin: 0 20px 0 0;
+  padding: 5px 0 0;
+  background: #ffffff;
+  position: relative;
+}
+
+.goods_pick_list .pick_list_box input{
+  position: absolute;
+  top: 3px;
+  left: 1px;
+  width: 0;
+  z-index: -1;
+}
+
+input[type="radio"]{
+  width: 13px;
+  height: 13px;
+  vertical-align: top;
+}
+
+.goods_pick_list .pick_list_box .pick_list label.on{
+  color: #ab3e55;
+  font-weight: bold;
+  background: url(	https://www.naturestore.co.kr/data/skin/front/the_living/img/icon/goods_icon/icon_sort_check.png) no-repeat left 5px;
+}
+
+.goods_pick_list .pick_list_box .pick_list label{
+  padding: 0 0 0 18px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+label{
+  cursor: default;
+}
+
+
+.choice_num_view{
+  float: right;
+  padding: 0 10px 0 0;
+}
+
+.choice_num_view select{
+  width: 120px;
+}
+
+select{
+  height: 31px;
+  color: #717171;
+  vertical-align: top;
+  outline: none;
+}
+
+input, select, textarea, button{
+  vertical-align: middle;
+}
+
+
+.goods_list{
+  padding-bottom: 30px;
+}
+
+.goods_list_cont{
+  position: relative;
+  width: 100%;
+}
+
+.goods_list_cont:after{
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.goods_list_cont ul{
+  float: left;
+  width: 100%;
+  font-size: 0;
+}
+
+.goods_list_cont ul li{
+  display: inline-block;
+  position: relative;
+  min-height: 50px;
+  margin: 40px 0 0 0;
+  text-align: left;
+  vertical-align: top;
+  font-size: 12px;
+}
+
+.item_cont{
+  padding: 0 10px;
+  text-align: left;
+  color: #1c1c1c; 
+}
+
+.item_photo_box{
+  display: inline-block !important;
+  text-align: left;
+  border: 0px solid #ebebeb;
+  vertical-align: middle;
+  
+  
+  position: relative;
+  overflow: hidden;
+}
+
+.item_photo_box a{
+  overflow: hidden;
+  display: block;
+  height: 100%;
+}
+
+.item_photo_box a>img{
+  border: none !important;
+}
+
+fieldset, img{
+  border: 0 none;
+  vertical-align: top;
+}
+
+.icon_time_sale{
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+}
+
+.item_info_cont{
+  padding: 20px 0 0 0;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+.item_tit_box{
+  padding: 0;
+}
+
+.item_tit_box .item_name{
+  display: block;
+  padding: 5px 0 0 0;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+.item_money_box{
+  padding: 10px 0 0 0;
+  line-height: 1;
+}
+
+.item_money_box .item_price{
+  display: block;
+  padding: 7px 0 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+strong{
+  font-weight: bold;
+}
+
+
+.pick_list_caption {
+  float: left;
+  padding: 0 10px 0 0;
+}
+
+.pick_list_cost {
+  float: right;
+  padding: 0 10px 0 0;
+}
+
+
+.goods_pick_list button {
+  width: 100%;
+  background-color: #000000;
+  border: none;
+  color: white;
+  height: 40px;
+}
