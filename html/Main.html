@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <!-- 파일 가져갈시 html, css, 이미지 경로 재설정할 것-->
-<!-- -->
+<!-- 자바스크립트 코드는 맨아래에 -->
 
 <html>
 
@@ -24,7 +24,7 @@
   <!-- 푸터 창 css -->
   <link rel="stylesheet" href="../css\footer.css">
 
-  <!-- font awesome 경훈 -->
+  <!-- font awesome 가져오기 -->
   <script src="https://kit.fontawesome.com/15ebb873a6.js" crossorigin="anonymous"></script>
 
   <!-- JQuery 첫방문시 자동 다운로드 -->
@@ -64,12 +64,12 @@
                 value="검색" alt="검색">
             </div>
             <div class="search_cont" style="display:none;">
-              <div class="1b_itembox">
+              <div class="itembox">
                 <ul class="tab_list">
                   <li class="recentkeyword">최근검색어</li>
                   <li class="hitkeyword">인기검색어</li>
                 </ul>
-                <div class="1b_item" id="recentkeyword_item">
+                <div class="item" id="recentkeyword_item">
                   <div class="recent_box">
                     <dl class="js_recent_area">
                       <dt><h1>최근검색어</h1></dt>
@@ -553,13 +553,13 @@
 
         <div class="info_ment">
 
-          <span><h3> </h3></span>
-
-          <span><p> </p></span>
+          <div class="info_name"><span><h3> </h3></span></div>
+          <div class="info_explain"><span><p> </p></span></div>
 
           <div class="info_size">
-            <p>사이즈: m 95</p>
-            <p>컬러: 카키</p>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
           
         </div>
@@ -583,9 +583,16 @@
       </div>
 
       <figcaption class="product_ment">
-        <span><h1>N_여성(women)_카키_롱슬리브(top)</h1></span>
-        <span><p>N_여성_카키_롱슬리브</p></span>
+        <span><h1>N_여성_카키_롱슬리브</h1></span>
+        <span><p>루즈핏의 정석 카키색으로 덮어보세요.</p></span>
       </figcaption>
+
+      <div class ="item_src" style="display: none;">
+        <span>사이즈: s, m
+          색상: 카키
+          가격: 15000원
+        </span>
+      </div>
 
     </figure>
 
@@ -601,6 +608,13 @@
         <span><p>다가오는 봄 따듯하게 맡이하세요.</p></span>
       </figcaption>
 
+      <div class ="item_src" style="display: none;">
+        <span>사이즈: m
+        색상: 청색
+        가격: 10000원
+        </span>
+      </div>
+
     </figure>
 
     <figure class="product">
@@ -611,8 +625,15 @@
 
       <figcaption class="product_ment">
         <span><h1>남성_검정_샌들</h1></span>
-        <span><p>남성_검정_샌들</p></span>
+        <span><p>발을 좀더 편안하게.</p></span>
       </figcaption>
+
+      <div class ="item_src" style="display: none;">
+        <span>사이즈: 240 ~ 280
+        색상: 검정
+        가격: 20000원
+        </span>
+      </div>
 
     </figure>
 
@@ -625,8 +646,15 @@
 
       <figcaption class="product_ment">
         <span><h1>여성_회색_맨투맨</h1></span>
-        <span><p>여성_회색_맨투맨</p></span>
+        <span><p>입을게 없을때는 맨투맨</p></span>
       </figcaption>
+
+      <div class ="item_src" style="display: none;">
+        <span>사이즈: L, XL
+        색상: 회색
+        가격: 12000원
+        </span>
+      </div>
 
     </figure>
 
@@ -639,8 +667,15 @@
 
       <figcaption class="product_ment">
         <span><h1>공용_흰색_가방</h1></span>
-        <span><p>공용_흰색_가방</p></span>
+        <span><p>힙색을 찾고계신가요? 여기있습니다.</p></span>
       </figcaption>
+
+      <div class ="item_src" style="display: none;">
+        <span>사이즈: free
+        색상: 흰색, 노란색
+        가격: 5000원
+        </span>
+      </div>
 
     </figure>
 
@@ -777,8 +812,8 @@
 
   </div>
 
-  <script type="text/javascript" src="../js\popup.js"></script>
-  <script type="text/javascript" src="../js\searchform.js"></script>
+  <script type="text/javascript" src="../js\popup.js"></script> <!-- 팝업창 스크립트 가져오기 -->
+  <script type="text/javascript" src="../js\searchform.js"></script> <!-- 검색창 스크립트 가져오기 -->
 </body>
 
 </html>
