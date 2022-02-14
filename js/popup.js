@@ -33,7 +33,6 @@ $(document).ready(function(){
     = $(this).siblings('figcaption').children('span').filter(':first-child').siblings('span').text();
     document.querySelector(".product_box .info_ment .info_size").innerText
     = $(this).siblings('.item_src').children('span').text();
-    console.log($(this).siblings('div').children('span').text());
   });
 });
 // 
