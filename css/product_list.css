@@ -43,6 +43,11 @@
   padding: 0 15px;
   text-align: left;
 }
+#product_list .product_ment p { /* 설명란 글씨 넘침 처리 1줄까지*/
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+} 
 #product_list .product_ment h1 { /* <h> 대문 글씨 스타일*/
   margin-bottom: 15px;
   margin-top: 25px;
