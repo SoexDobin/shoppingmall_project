@@ -37,11 +37,14 @@
   display: block;
   padding: 10px 20px 20px 20px;
 }
-#product_list .info_ment > .info_explain {
+#product_list .info_ment .info_explain {
   display: block;
+  height:100px;
   padding: 0 20px 20px 20px;
   word-break:break-all;
   text-align: left;
+  overflow: auto;
+  -ms-overflow-style: none;
 }
 #product_list .info_size {
   font-size: 15px;
@@ -49,6 +52,9 @@
   padding: 10px 20px 10px 20px ;
   background: #f8f8f8;
   line-height: 35px;
+}
+#product_list .info_ment > .info_explain::-webkit-scrollbar {
+  display: none;
 }
 #product_list .info_img img {
   max-width: 600px;

@@ -35,4 +35,3 @@ $(document).ready(function(){
     = $(this).siblings('.item_src').children('span').text();
   });
 });
-// 
